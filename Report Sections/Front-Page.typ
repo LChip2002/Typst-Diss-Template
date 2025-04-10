@@ -5,13 +5,26 @@
 
 #pad(top: 15pt)[
     #set align(center)
-    #text(14pt)[*Your Project Title.*
+    #text(20pt)[*Your Project Title.*
 ]]
+
+#pad(top: 15pt)[
+#image("../Images/uni_crest.jpg", width: 60%)
+]
 
 #pad(top: 30pt)[
   #set align(center)
   #text(10pt)[
-      Insert Name Here
+      [Insert Name Here] \
+
+      [Insert Student ID Here] \
+  ]
+]
+
+#pad(top: 10pt)[
+  #set align(center)
+  #text(10pt)[
+      StudentID\@students.lincoln.ac.uk
   ]
 ]
 
@@ -19,19 +32,30 @@
   #set align(center) 
   #text(9pt)[
       University of Lincoln, School of Engineering and Physical Sciences \
-      \
-      StudentID\@students.lincoln.ac.uk
+
+      College of Health and Science \
+
+      University of Lincoln \
   ]
 ]
 
 #block(width: 10cm)[
 #pad(top: 20pt)[
-  #set align(left)
+  #set align(center)
   #text(9pt)[
-  *Abstract.* Fun Fun Fun.
-
-  \
-  *Keywords:* Fun, Lipsum.
+  Submitted in partial fulfilment of the requirements for the \
+  Degree of [Your degree programme e.g. Bachelor of
+  Science with Honours in Computer Science]
   ]
 ]
+]
+
+#pad(top: 20pt)[
+  #set align(center)
+  #text(9pt)[
+      Supervisor: [Insert Supervisor Name Here] \
+      \
+
+      [Month Year] \
+  ]
 ]
