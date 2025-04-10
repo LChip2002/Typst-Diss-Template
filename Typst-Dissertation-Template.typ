@@ -6,5 +6,3 @@
 #show: doc => layout.MainPageSettings(doc)
 
 #include "Section_1.typ"
-
-#import "template/layout-template.typ" as layout
