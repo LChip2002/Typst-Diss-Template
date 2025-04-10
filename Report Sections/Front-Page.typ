@@ -1,11 +1,11 @@
-#import "template/layout-template.typ" as layout
+#import "../template/layout-template.typ" as layout
 #show: doc => layout.MainPageSettings(doc)
 
 #set align(center)
 
 #pad(top: 15pt)[
     #set align(center)
-    #text(14pt)[*Insert Title Here.*
+    #text(14pt)[*Your Project Title.*
 ]]
 
 #pad(top: 30pt)[
