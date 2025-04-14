@@ -55,9 +55,8 @@
 
     // Checks heading level
     if it.body == [References] {
-      [References
-
-      ]
+      [References]
+      set heading(numbering: none)
 
     } else {
       if it.level == 1 {
