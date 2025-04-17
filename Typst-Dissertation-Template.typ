@@ -11,15 +11,17 @@
 #include "Report Sections/0-Acknowledgements.typ"
 #include "Report Sections/1-Abstract.typ"
 #include "Report Sections/2-Contents.typ"
+// Resets the counter for the headings
+#counter(heading).update(0)
+
 #include "Report Sections/3-Introduction.typ"
 #include "Report Sections/4-Literature-Review.typ"
 #include "Report Sections/5-Requirements-Analysis.typ"
-#include "Report Sections/6-Design.typ"
-#include "Report Sections/7-Methodology.typ"
-#include "Report Sections/8-Implementation.typ"
-#include "Report Sections/9-Results-&-Discussion.typ"
-#include "Report Sections/10-Conclusion.typ"
-#include "Report Sections/11-Appendices.typ"
+#include "Report Sections/6-Design-&-Methodology.typ"
+#include "Report Sections/7-Implementation.typ"
+#include "Report Sections/8-Results-&-Discussion.typ"
+#include "Report Sections/9-Conclusion.typ"
+#include "Report Sections/10-Appendices.typ"
 
 #pagebreak()
 

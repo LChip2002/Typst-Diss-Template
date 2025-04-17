@@ -58,9 +58,35 @@
       [References]
       set heading(numbering: none)
 
-    } else {
+    } 
+    else if it.body == [Acknowledgements] {
+      [Acknowledgements]
+      set heading(numbering: none)
+    } 
+    else if it.body == [Abstract] {
+      [Abstract]
+      set heading(numbering: none)
+    } 
+    else if it.body == [Contents] {
+      [Table of Contents]
+      set heading(numbering: none)
+    }
+    else if it.body == [List of Figures] {
+      [List of Figures]
+      set heading(numbering: none)
+    }
+    else if it.body == [List of Tables] {
+      [List of Tables]
+      set heading(numbering: none)
+    }
+    else if it.body == [Appendices] {
+      [Appendices]
+      set heading(numbering: none)
+    }
+    else {
+
       if it.level == 1 {
-        set text(14pt, weight: "bold")
+        set text(15pt, weight: "bold")
         set align(left)
         it
       } else if it.level == 2 {
@@ -68,7 +94,7 @@
           it
       } else if it.level == 3 {
           set text(10pt, weight: "bold")
-          it.body
+          it
           //[#v(2em)#h(PAR_INDENT) #it.body]
       } else if it.level == 4 {
           set text(10pt, weight: "regular", style: "italic")
