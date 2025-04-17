@@ -95,6 +95,9 @@
               [Chapter #counter(heading).display()],  // Left top column
               [], // Empty column
               [#it.body],// bottom column
+              // Adding spacing between header and text.
+              [#linebreak()],
+              [#linebreak()],
             )
           }
         }
