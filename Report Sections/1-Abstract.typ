@@ -1,6 +1,6 @@
 #import "../template/layout-template.typ" as layout
 #show: doc => layout.MainPageSettings(doc)
 
-= Acknowledgements
+= Abstract
 
-Here is the abstract for this project report.
+#h(-15pt)Here is the abstract for this project report.
