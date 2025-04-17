@@ -28,7 +28,7 @@
   // show par: set block(spacing: 0.4em)
 
   // PAGE CONFIG
-  set page(paper: "us-letter")
+  set page(paper: "a4")
   set page(margin: (left: 44mm, right: 44mm, top: TOP_PAGE_MARING, bottom: 45mm))
 
 // Set headers and page numbering
