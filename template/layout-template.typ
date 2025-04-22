@@ -11,7 +11,7 @@
   //set document(author: "test", title: "title")
   set text(
     font: "New Computer Modern",
-    size: 10pt
+    size: 12pt
   )
   // set page(
   //   width: 210mm,
@@ -84,7 +84,7 @@
     }
     else {
       if it.level == 1 {
-        set text(15pt, weight: "bold")
+        set text(25pt, weight: "bold")
         set align(left)
         show heading.where(level: 1): it => {
           if it.body != text("Inhaltsverzeichnis") {  // Text comparison
@@ -103,10 +103,10 @@
         }
       it
       } else if it.level == 2 {
-          set text(10pt, weight: "bold")
+          set text(17pt, weight: "bold")
           it
       } else if it.level == 3 {
-          set text(10pt, weight: "bold")
+          set text(14.5pt, weight: "bold")
           it
           //[#v(2em)#h(PAR_INDENT) #it.body]
       } else if it.level == 4 {
