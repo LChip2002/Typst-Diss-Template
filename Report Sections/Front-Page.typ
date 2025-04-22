@@ -30,7 +30,7 @@
 
 #pad(top: 5pt)[
   #set align(center) 
-  #text(9pt)[
+  #text(10pt)[
       University of Lincoln, School of Engineering and Physical Sciences \
 
       College of Health and Science \
@@ -42,7 +42,7 @@
 #block(width: 10cm)[
 #pad(top: 20pt)[
   #set align(center)
-  #text(9pt)[
+  #text(10pt)[
   Submitted in partial fulfilment of the requirements for the \
   Degree of [Your degree programme e.g. Bachelor of
   Science with Honours in Computer Science]
@@ -52,7 +52,7 @@
 
 #pad(top: 20pt)[
   #set align(center)
-  #text(9pt)[
+  #text(10pt)[
       Supervisor: [Insert Supervisor Name Here] \
       \
 

@@ -13,11 +13,6 @@
     font: "New Computer Modern",
     size: 12pt
   )
-  // set page(
-  //   width: 210mm,
-  //   height: 297mm,
-  //   margin: (top: 20mm, right: 40mm, bottom: 20mm, left: 40mm),
-  // )
 
   set par(
     first-line-indent: PAR_INDENT,
@@ -53,15 +48,39 @@
   show heading.where(level: 2): pad.with(bottom: 0.3em, top: 0.2em)
   show heading: it => {
 
+    // Set the default font and size for all headings
+    set text(23pt, weight: "bold")
+
     // Checks heading level
     if it.body == [References] {
       [References]
       set heading(numbering: none)
+
     } 
     else if it.body == [Acknowledgements] {
       [Acknowledgements]
       set heading(numbering: none)
     } 
+    else if it.body == [Table of Contents] {
+      [Table of Contents]
+      set heading(numbering: none)
+      [#linebreak()]
+      [#linebreak()]
+
+    }
+    else if it.body == [List of Figures] {
+      [List of Figures]
+      set heading(numbering: none)
+      [#linebreak()]
+      [#linebreak()]
+
+    } 
+    else if it.body == [List of Tables] {
+      [List of Tables]
+      set heading(numbering: none)
+      [#linebreak()]
+      [#linebreak()]
+    }
     else if it.body == [Abstract] {
       [Abstract]
       set heading(numbering: none)
@@ -70,21 +89,15 @@
       [Table of Contents]
       set heading(numbering: none)
     }
-    else if it.body == [List of Figures] {
-      [List of Figures]
-      set heading(numbering: none)
-    }
-    else if it.body == [List of Tables] {
-      [List of Tables]
-      set heading(numbering: none)
-    }
     else if it.body == [Appendices] {
       [Appendices]
       set heading(numbering: none)
     }
     else {
+
+      // Set the font and size for all headings based on their level
       if it.level == 1 {
-        set text(25pt, weight: "bold")
+        set text(23pt, weight: "bold")
         set align(left)
         show heading.where(level: 1): it => {
           if it.body != text("Inhaltsverzeichnis") {  // Text comparison
@@ -97,7 +110,7 @@
               [#it.body],// bottom column
               // Adding spacing between header and text.
               [#linebreak()],
-              [#linebreak()],
+              [#linebreak()]
             )
           }
         }
@@ -114,11 +127,12 @@
           //[#v(1.5em)#h(PAR_INDENT)#it.body]
       }
     }
+
+
+
   }
 
-
-
-  set super(size: 8pt)
+   set super(size: 8pt)
 
   let is_long_caption = false
 
