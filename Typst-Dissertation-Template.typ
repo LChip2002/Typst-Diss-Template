@@ -11,6 +11,15 @@
 #include "Report Sections/0-Acknowledgements.typ"
 #include "Report Sections/1-Abstract.typ"
 #include "Report Sections/2-Contents.typ"
+
+// List of Figures
+#outline(title: "List of Figures", target: figure.where(kind: image))
+
+#pagebreak()
+
+// List of Tables
+#outline(title: "List of Tables", target: figure.where(kind: table))
+
 // Resets the counter for the headings
 #counter(heading).update(0)
 
