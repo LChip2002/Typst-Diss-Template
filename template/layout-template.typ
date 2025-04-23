@@ -123,8 +123,8 @@
           it
           //[#v(2em)#h(PAR_INDENT) #it.body]
       } else if it.level == 4 {
-          set text(10pt, weight: "regular", style: "italic")
-          //[#v(1.5em)#h(PAR_INDENT)#it.body]
+          set text(10pt, weight: "bold")
+          it
       }
     }
 
