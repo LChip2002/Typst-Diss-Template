@@ -97,7 +97,7 @@
 
       // Set the font and size for all headings based on their level
       if it.level == 1 {
-        set text(23pt, weight: "bold")
+        set text(22pt, weight: "bold")
         set align(left)
         show heading.where(level: 1): it => {
           if it.body != text("Inhaltsverzeichnis") {  // Text comparison
@@ -108,12 +108,11 @@
               [Chapter #counter(heading).display()],  // Left top column
               [], // Empty column
               [#it.body],// bottom column
-              // Adding spacing between header and text.
-              [#linebreak()],
-              [#linebreak()]
             )
           }
         }
+        // Adding spacing between header and text.
+        show heading.where(level: 1): pad.with(bottom: 1.3em, top: 0em)
       it
       } else if it.level == 2 {
           set text(17pt, weight: "bold")
