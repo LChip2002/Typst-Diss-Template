@@ -103,7 +103,7 @@
           if it.body != text("Inhaltsverzeichnis") {  // Text comparison
             grid(
               align: bottom,  // Align content to bottom of grid row
-              columns: (6fr, 4fr),
+              columns: (6fr, 1fr),
               row-gutter: 1.5em,  // Vertical spacing
               [Chapter #counter(heading).display()],  // Left top column
               [], // Empty column
