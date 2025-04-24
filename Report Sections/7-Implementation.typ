@@ -3,7 +3,7 @@
 #show: doc => layout.MainPageSettings(doc)
 
 
-= Methodology
+= Implementation
 
 == Source Code Demo
 
