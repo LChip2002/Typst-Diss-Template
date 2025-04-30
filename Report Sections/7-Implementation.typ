@@ -7,6 +7,11 @@
 
 == Source Code Demo
 
+This section should demonstrate your solution from a technical perspective, showing
+the different components of your software. You may wish to include code snippets
+and screenshots as figures to provide detail where necessary.
+
+=== Code Snippets
 Here you can see a short snippet of the code that was used to implement a simple Python sorting algorithm:
 
 #sourcecode[```Python 
