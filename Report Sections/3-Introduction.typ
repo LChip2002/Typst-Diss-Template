@@ -10,16 +10,44 @@ This document is a project report template for the School of Computer Science, U
 
 === Sub-subheading
 
+== Formmatting Mathematics
+Here are two equations:
+
+
+
+And here is some text with some nice inline maths, (x,y) wow γ so cool ρ.
+
 == Figures
 // TODO - Move or Remove below
 
-Lipsum anus duis mollis, inceptos ridiculus mus. Aenean ligula ligula, mollis inceptos, congue aenean, inceptos ligula. Aenean ligula ligula mollis inceptos, congue aenean, inceptos ligula. Aenean ligula ligula, mollis inceptos, congue aenean, inceptos ligula. Aenean ligula ligula @test_2025. @fig:SampleCaption
+Here is a sentence, and you can see a nice picture in @fig:SampleCaption. @test_2025. 
 
 #figure(
-  image("../Images/crop.png", width: 23%),
+  image("../Images/crop.png", width: 100%),
   caption: [
-    Sample caption.
+    A picture of the Brayford from Google Images.
   ],
 )<fig:SampleCaption>
 
-#h(15pt)Test Test Test
+// Using the #h command, gives the required spacing needed for the line after a figure to allign with formatting requirements.
+
+#h(15pt)Also, a table can be found in @tab:SampleTableCaption.
+#figure(
+table(
+  columns: 3,
+  rows: 4,
+  table.header[*First Name*][*Last Name*][*Age*],
+  [John], [Doe], [25],
+  [Jane], [Smith], [30],
+  [Alice], [Johnson], [22],
+  [Bob], [Brown], [28],
+  
+),
+caption: [
+  Here is a table. The caption goes above like this.
+],
+)<tab:SampleTableCaption>
+
+== Referencing
+
+Here is an example of a citation using the Lincoln Harvard style @test_2025. These references are automatically generated from the BibTeX (.bib) file. You can add your own references to the BibTeX file, and they will be included in the bibliography. 
