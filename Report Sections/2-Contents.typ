@@ -10,7 +10,7 @@
     // Apply your custom styling
     v(12pt, weak: true)
     strong(it)
-  } 
+  }
   else {
     // Otherwise, just render the entry normally (default style)
     
@@ -19,5 +19,3 @@
 #outline(indent: auto)
 
 #pagebreak()
-
-// TODO - Add List of Figures and List of Tables

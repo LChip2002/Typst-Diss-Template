@@ -5,6 +5,7 @@
 
 #show: doc => layout.MainPageSettings(doc)
 
+#set heading(numbering: none)
 = Appendices
 
 == Appendix A - Code Snippets w/ Codelst
