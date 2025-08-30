@@ -7,6 +7,12 @@
 #import "template/layout-template.typ" as layout
 #show: doc => layout.MainPageSettings(doc)
 
+#import "@preview/wordometer:0.1.4": word-count, total-words
+#set text(lang: "en") // Set document language for proper word tokenization
+
+// Exclude words from tables, figures, captions, and references
+#show: word-count.with(exclude: (table, figure, figure.caption,  ref, cite))
+
 // Different sections of the report including the contents page
 #include "Report Sections/0-Acknowledgements.typ"
 #include "Report Sections/1-Abstract.typ"
@@ -31,6 +37,7 @@
 #include "Report Sections/8-Results-&-Discussion.typ"
 #include "Report Sections/9-Conclusion.typ"
 #include "Report Sections/10-Appendices.typ"
+  
 
 #pagebreak()
 
@@ -43,3 +50,15 @@
 #set align(left)
 
 #bibliography("refs.bib", style: "template/university-of-lincoln-harvard.csl", title:[References])
+
+#pagebreak()
+
+// Add overall word count at the end of the document
+#align(center)[
+
+      #set text(size: 14pt, weight: "bold")
+      Overall Word Count (excluding figures, tables, captions, and references):
+      #h(0.5em)
+      #set text(size: 20pt, weight: "bold", fill: blue) // Make it stand out
+      #total-words words
+    ]
