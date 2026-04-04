@@ -5,7 +5,7 @@ This template is designed for creating academic reports and dissertations using 
 
 ## Requirements:
 - Visual Studio Code
-- Most up-to-date version of the Tinymist VS Code extension (v0.13.10 as of April 2025)
+- Most up-to-date version of the Tinymist VS Code extension (v0.14.14 as of April 2026)
 - vscode-pdf - Most up-to-date version of the extension to display the compiled PDF in the VSCode IDE.
 
 ## Installation Instructions:
