@@ -10,7 +10,7 @@ This repository provides three templates for writing academic reports, dissertat
 | Folder | Degree Level |
 |--------|-------------|
 | `BSc-Dissertation-Template` | BSc (Hons) Undergraduate Dissertation |
-| `MSc/MRes-Dissertation-Template` | MSc/MRes Postgraduate Dissertation |
+| `MSc-Dissertation-Template` | MSc/MRes Postgraduate Dissertation |
 | `PhD-Thesis-Template` | PhD Doctoral Thesis |
 
 <br>
