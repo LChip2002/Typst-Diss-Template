@@ -1,6 +1,7 @@
 # A Typst Template for Dissertation and Academic Writing at the University of Lincoln
 
 ## Description:
+
 This template is designed for creating academic reports and dissertations using Typst, a modern typesetting system. It provides a structured format tailored for academic writing at the University of Lincoln, ensuring consistency and ease of use.
 
 ## Requirements:
