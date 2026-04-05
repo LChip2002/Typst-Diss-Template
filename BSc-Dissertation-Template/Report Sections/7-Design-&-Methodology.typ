@@ -35,6 +35,7 @@ Again, this list is not exhaustive, and you should still include relevant sectio
 == Research Involving Human Participants
 
 For projects involving human participants, you will need to consider a hypothesis or research question that your project will answer. In addition to the sections outlined above, you may also need to provide details of:
+
 - Participant recruitment
 - Evidence that ethical procedures have been followed
 - Study design (including hypotheses/research question as appropriate)

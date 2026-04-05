@@ -10,12 +10,12 @@
   [Insert Project Title Here]
 ]
 
-#v(1.5cm)
+#v(1.0cm)
 
 // University branding
-#image("../Images/uni_crest.jpg", width: 60%)
+#image("../Images/uni_crest.jpg", width: 75%)
 
-#v(1.5cm)
+#v(1.0cm)
 
 // Author information
 #text(12pt)[
@@ -41,20 +41,21 @@
   University of Lincoln
 ]
 
-#v(1.5cm)
+#v(1.0cm)
 
 // Submission statement
 #block(width: 85%)[
   #text(12pt)[
-    Submitted in partial fulfilment of the requirements for the Degree of [Your Degree Programme e.g. Bachelor of Science with Honours in Computer Science]
+    Submitted in partial fulfilment of the requirements for the Degree of [Your Programme Title e.g.  Master of Science in Computing]
   ]
 ]
 
 #v(1cm)
 
-// Supervisor
+// Supervision team
 #text(12pt)[
-  Supervisor: [Insert Supervisor Name Here]
+  Primary Supervisor: [Primary Supervisor Name] \
+  Secondary Supervisor: [Secondary Supervisor Name]
 ]
 
 #v(1cm)
