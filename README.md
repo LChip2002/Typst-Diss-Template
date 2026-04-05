@@ -39,7 +39,7 @@ This repository provides three templates for writing academic reports, dissertat
 
 Previewing a document allows you to view a version of the document that updates with live edits you make to the Typst Code.
 
-1. You will need to make sure you are in the typst file that contains all the different report sections. E.g. `Typst-Dissertation-Template.typ`.
+1. You will need to make sure you are in the main Typst file that contains all the different report sections. For the BSc and MSc templates this is `Typst-Dissertation-Template.typ`, and for the PhD template this is `Typst-PhD-Thesis.typ`.
 2. Select the preview button at the top of your IDE to open a live preview of the document.
 3. If there is an error in the Typst code, the preview will not be displayed.
 
@@ -52,7 +52,7 @@ Previewing a document allows you to view a version of the document that updates 
 
 To generate a PDF file for submission or sharing with others:
 
-1. Similar to how you would preview a document, you need to go to the top of the file of the main typst file. E.g. `Typst-Dissertation-Template.typ`.
+1. Similar to how you would preview a document, you need to go to the top of the main Typst file. For the BSc and MSc templates this is `Typst-Dissertation-Template.typ`, and for the PhD template this is `Typst-PhD-Thesis.typ`.
 2. Select the export PDF option or press the PDF icon at the top of your IDE to compile the document.
 3. Again, if there is an error in the Typst code, the PDF will not compile.
 4. The compiled PDF will be outputted with the same name as the main file in the same directory, and can be opened in your IDE or any PDF viewer.
@@ -101,7 +101,7 @@ To make collecting and managing references easier, a reference management tool s
 
 <h3>Template File:</h3>
 
-- The layout-template.typ provides all the formatting to the document to lay it out similar to exisiting dissertation templates.
+- The layout-template.typ provides all the formatting to the document to lay it out similar to existing dissertation templates.
 - If you want to change the layout, font or other properties of the template, then you will need to make adjustments here on your template.
 
 ## Issue Reporting
