@@ -1,6 +1,6 @@
 #import "../template/layout-template.typ" as layout
 #import "@preview/codelst:2.0.2": sourcecode
-#import "@preview/fletcher:0.5.4" as fletcher: diagram, node, edge
+#import "@preview/fletcher:0.5.7" as fletcher: diagram, node, edge
 #import fletcher.shapes: diamond
 
 #show: doc => layout.MainPageSettings(doc)

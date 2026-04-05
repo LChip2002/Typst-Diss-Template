@@ -53,7 +53,7 @@ Here are two equations:
 
 $ a = b + 1 $ <eq:simple>
 
-$ frac(planck.reduce^2, 2m) nabla^2 Psi + V(bold(r)) Psi = -i planck.reduce frac(diff Psi, diff t) $ <eq:schrodinger>
+$ frac(planck^2, 2m) nabla^2 Psi + V(bold(r)) Psi = -i planck frac(partial Psi, partial t) $ <eq:schrodinger>
 
 Inline mathematics can be embedded within body text, for example $(x, y)$, $gamma$, and $rho$.
 
