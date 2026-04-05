@@ -16,7 +16,7 @@ This repository provides three templates for writing academic reports, dissertat
 <br>
 </div>
 
-The BSc and MSc templates can be considered feature-complete and are unlikely to change unless issues are raised or contributions are submitted via pull requests., however the PhD template will receive ongoing updates over the coming years.
+The BSc and MSc templates can be considered feature-complete and are unlikely to change unless issues are raised or contributions are submitted via pull requests; however, the PhD template will receive ongoing updates over the coming years.
 
 ## Requirements
 
