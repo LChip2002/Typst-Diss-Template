@@ -9,20 +9,20 @@ This repository provides three templates for writing academic reports, dissertat
 
 | Folder | Degree Level | Status |
 |--------|-------------|--------|
-| `BSc-Dissertation-Template` | BSc (Hons) Undergraduate Dissertation | Stable — used for several successfully submitted dissertations |
-| `MSc-Dissertation-Template` | MSc/MRes Postgraduate Dissertation | Stable — used for successfully submitted dissertations |
-| `PhD-Thesis-Template` | PhD Doctoral Thesis | Work in progress — will continue to be developed |
+| `BSc-Dissertation-Template` | BSc (Hons) Undergraduate Dissertation | Complete — used for several successfully submitted dissertations |
+| `MSc-Dissertation-Template` | MSc/MRes Postgraduate Dissertation | Complete — used for successfully submitted dissertations |
+| `PhD-Thesis-Template` | PhD Doctoral Thesis | Complete + Work in progress — will continue to be developed |
 
 <br>
 </div>
 
-The BSc and MSc templates are considered feature-complete and are in a stable state unless issues are raised or contributions are submitted via pull requests. The PhD template will receive ongoing updates over the coming years. It should be noted that PhD thesis layouts can vary significantly between disciplines and institutions — this template provides a strong starting point for anyone who would like to use Typst for their thesis.
+The BSc and MSc templates can be considered feature-complete and are unlikely to change unless issues are raised or contributions are submitted via pull requests., however the PhD template will receive ongoing updates over the coming years.
 
 ## Requirements
 
 - Any IDE that supports the Tinymist extension. The following are known to be compatible:
   - [Visual Studio Code](https://code.visualstudio.com/)
-  - [Google Antigravity](https://plugins.jetbrains.com/plugin/227-google-antigravity)
+  - [Google Antigravity](https://antigravity.google/download)
 - [Tinymist](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist) - Most up-to-date version of the Tinymist extension for your IDE (v0.14.14 as of April 2026)
 - [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) - Most up-to-date version of the extension to display the compiled PDF in your IDE
 
