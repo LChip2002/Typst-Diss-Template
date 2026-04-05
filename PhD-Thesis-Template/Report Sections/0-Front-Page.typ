@@ -13,21 +13,13 @@
 #v(1.0cm)
 
 // University branding
-#image("../Images/uni_crest.jpg", width: 75%)
+#image("../Images/uni_crest.jpg", width: 85%)
 
 #v(1.0cm)
 
 // Author information
 #text(12pt)[
   [Insert Full Name Here] \
-  [Insert Student ID Here]
-]
-
-#v(0.45cm)
-
-// Contact
-#text(12pt)[
-  StudentID\@students.lincoln.ac.uk
 ]
 
 #v(0.45cm)
@@ -46,7 +38,9 @@
 // Submission statement
 #block(width: 85%)[
   #text(12pt)[
-    Submitted in partial fulfilment of the requirements for the Degree of [Your Programme Title e.g. Master of Science in Computing]
+    Submitted in partial satisfaction of the requirements for the
+    Degree of Doctor of Philosophy \
+    in [Subject Area]
   ]
 ]
 
@@ -55,7 +49,8 @@
 // Supervision team
 #text(12pt)[
   Primary Supervisor: [Primary Supervisor Name] \
-  Secondary Supervisor: [Secondary Supervisor Name]
+  Secondary Supervisor: [Secondary Supervisor Name]\
+  Third Supervisor: [Third Supervisor Name]
 ]
 
 #v(1cm)

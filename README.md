@@ -1,22 +1,24 @@
 # A Collection of Typst Templates for Dissertations, Theses and Academic Writing at the University of Lincoln
 
-<h2 id="description">Description:</h2>
+## Description
 
 This repository provides three templates for writing academic reports, dissertations and theses using [Typst](https://typst.app/), a modern typesetting system. Each template provides a structured format tailored for academic writing at the University of Lincoln, ensuring consistency and ease of use.
 
 <div align="center">
 <br>
 
-| Folder | Degree Level |
-|--------|-------------|
-| `BSc-Dissertation-Template` | BSc (Hons) Undergraduate Dissertation |
-| `MSc-Dissertation-Template` | MSc/MRes Postgraduate Dissertation |
-| `PhD-Thesis-Template` | PhD Doctoral Thesis |
+| Folder | Degree Level | Status |
+|--------|-------------|--------|
+| `BSc-Dissertation-Template` | BSc (Hons) Undergraduate Dissertation | Stable — used for several successfully submitted dissertations |
+| `MSc-Dissertation-Template` | MSc/MRes Postgraduate Dissertation | Stable — used for successfully submitted dissertations |
+| `PhD-Thesis-Template` | PhD Doctoral Thesis | Work in progress — will continue to be developed |
 
 <br>
 </div>
 
-<h2 id="requirements">Requirements:</h2>
+The BSc and MSc templates are considered feature-complete and are in a stable state unless issues are raised or contributions are submitted via pull requests. The PhD template will receive ongoing updates over the coming years. It should be noted that PhD thesis layouts can vary significantly between disciplines and institutions — this template provides a strong starting point for anyone who would like to use Typst for their thesis.
+
+## Requirements
 
 - Any IDE that supports the Tinymist extension. The following are known to be compatible:
   - [Visual Studio Code](https://code.visualstudio.com/)
@@ -24,7 +26,7 @@ This repository provides three templates for writing academic reports, dissertat
 - [Tinymist](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist) - Most up-to-date version of the Tinymist extension for your IDE (v0.14.14 as of April 2026)
 - [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) - Most up-to-date version of the extension to display the compiled PDF in your IDE
 
-<h2 id="installation-instructions">Installation Instructions:</h2>
+## Installation Instructions
 
 1. Ensure the required software and extensions listed in the [Requirements](#requirements) section above are installed.
 2. Navigate to the repository on GitHub and click **Use this template**, then select **Create a new repository** to create your own copy.
@@ -33,9 +35,9 @@ This repository provides three templates for writing academic reports, dissertat
 5. Check that you can generate the document from the template using the [How to Compile](#how-to-compile) instructions.
 6. If you want to check for any spelling or grammar errors, it is advised that you use an external application such as Word, Grammarly, or Google Docs, as spell checking support varies across IDEs.
 
-<h2 id="how-to-compile">How to Compile:</h2>
+## How to Compile
 
-<h3>Option 1 - Preview:</h3>
+### Option 1 - Preview
 
 Previewing a document allows you to view a version of the document that updates with live edits you make to the Typst Code.
 
@@ -48,7 +50,7 @@ Previewing a document allows you to view a version of the document that updates 
 <img src="./Tutorial%20Screenshots/preview.png">
 </p>
 
-<h3>Option 2 - Export PDF:</h3>
+### Option 2 - Export PDF
 
 To generate a PDF file for submission or sharing with others:
 
@@ -64,13 +66,13 @@ To generate a PDF file for submission or sharing with others:
 
 <br>
 <br>
-  
+
 <img src="./Tutorial%20Screenshots/pdf_compile.png">
 </p>
 
-<h2 id="how-to-use">How to Use:</h2>
+## How to Use
 
-<h3>Document Structure:</h3>
+### Document Structure
 
 - Each template is structured so that every required section is separated as its own file within the template directory.
 - This allows you to easily find the section you are working on and compile it individually if needed.
@@ -83,11 +85,11 @@ To generate a PDF file for submission or sharing with others:
 </p>
 <br>
 
-<h3>Appendices:</h3>
+### Appendices
 
 In this section, there are examples of techniques for things like code snippets and flowcharts that you can manually make in Typst.
 
-<h3>References:</h3>
+### References
 
 In academic writing, you will need to evidence your arguments with academic literature and external sources. Referencing in Typst is very similar to LaTeX — you will need a BibTeX `.bib` file to store all your references, which can then be cited by tagging them using the `@` symbol followed by the reference name.
 
@@ -99,7 +101,7 @@ In academic writing, you will need to evidence your arguments with academic lite
 
 To make collecting and managing references easier, a reference management tool such as [Zotero](https://www.zotero.org) allows you to export citations directly as a `.bib` file to use in your Typst document.
 
-<h3>Template File:</h3>
+### Template File
 
 - The layout-template.typ provides all the formatting to the document to lay it out similar to existing dissertation templates.
 - If you want to change the layout, font or other properties of the template, then you will need to make adjustments here on your template.
@@ -114,4 +116,3 @@ If you encounter any issues or have suggestions for improvements, please report 
 - [Fletcher Library](https://typst.app/universe/package/fletcher/)
 - [Create a GitHub Template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 - [Git Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-

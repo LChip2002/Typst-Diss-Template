@@ -22,24 +22,32 @@
 
 #pagebreak()
 
-// Front matter
+// Front matter (Roman numeral page numbering)
 
 #import "template/layout-template.typ" as layout
 #show: doc => layout.MainPageSettings(doc)
 #set heading(numbering: "1.1")
 
+// Set roman numeral page numbering for front matter
+#set page(numbering: "i")
+
+// Declaration
+#include "Report Sections/1-Declaration.typ"
+
+#pagebreak()
+
 // Acknowledgements
-#include "Report Sections/1-Acknowledgements.typ"
+#include "Report Sections/2-Acknowledgements.typ"
 
 #pagebreak()
 
 // Abstract
-#include "Report Sections/2-Abstract.typ"
+#include "Report Sections/3-Abstract.typ"
 
 #pagebreak()
 
 // Contents
-#include "Report Sections/3-Contents.typ"
+#include "Report Sections/4-Contents.typ"
 
 // List of Figures
 #outline(title: "List of Figures", target: figure.where(kind: image))
@@ -51,44 +59,53 @@
 
 #pagebreak()
 
-// Body matter
+// List of Acronyms
+#include "Report Sections/5-Acronyms.typ"
+
+#pagebreak()
+
+// Body matter (Arabic numeral page numbering)
+// Reset to Arabic page numbering for thesis body
+
+#set page(numbering: "1")
+#counter(page).update(1)
 
 // Reset heading counter for chapters
 #counter(heading).update(0)
 
 // Chapter 1: Introduction
 #counted-chapter("Introduction")[
-  #include "Report Sections/4-Introduction.typ"
+  #include "Report Sections/6-Introduction.typ"
 ]
 
-// Chapter 2: Literature Review
-#counted-chapter("Literature Review")[
-  #include "Report Sections/5-Literature-Review.typ"
+// Chapter 2: Background
+#counted-chapter("Background")[
+  #include "Report Sections/7-Literature-Review.typ"
 ]
 
-// Chapter 3: Requirements Analysis
-#counted-chapter("Requirements Analysis")[
-  #include "Report Sections/6-Requirements-Analysis.typ"
+// Chapter 3: Experimental Chapter 1
+#counted-chapter("Experimental Chapter 1")[
+  #include "Report Sections/8-Experimental-Chapter-1.typ"
 ]
 
-// Chapter 4: Design and Methodology
-#counted-chapter("Design and Methodology")[
-  #include "Report Sections/7-Design-&-Methodology.typ"
+// Chapter 4: Experimental Chapter 2
+#counted-chapter("Experimental Chapter 2")[
+  #include "Report Sections/9-Experimental-Chapter-2.typ"
 ]
 
-// Chapter 5: Implementation
-#counted-chapter("Implementation")[
-  #include "Report Sections/8-Implementation.typ"
+// Chapter 5: Experimental Chapter 3
+#counted-chapter("Experimental Chapter 3")[
+  #include "Report Sections/10-Experimental-Chapter-3.typ"
 ]
 
-// Chapter 6: Results & Discussion
-#counted-chapter("Results and Discussion")[
-  #include "Report Sections/9-Results-&-Discussion.typ"
+// Chapter 6: Main Findings
+#counted-chapter("Main Findings")[
+  #include "Report Sections/11-Main-Findings.typ"
 ]
 
-// Chapter 7: Conclusion
-#counted-chapter("Conclusion")[
-  #include "Report Sections/10-Conclusion.typ"
+// Chapter 7: Conclusions and Future Work
+#counted-chapter("Conclusions and Future Work")[
+  #include "Report Sections/12-Conclusions-And-Future-Work.typ"
 ]
 
 // References
@@ -104,7 +121,7 @@
 // Appendices
 
 #set heading(numbering: none)
-#include "Report Sections/11-Appendices.typ"
+#include "Report Sections/13-Appendices.typ"
 
 // Word count summary
 
