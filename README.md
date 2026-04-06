@@ -25,6 +25,7 @@ The BSc and MSc templates can be considered feature-complete and are unlikely to
   - [Google Antigravity](https://antigravity.google/download)
 - [Tinymist](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist) - Most up-to-date version of the Tinymist extension for your IDE (v0.14.14 as of April 2026)
 - [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) - Most up-to-date version of the extension to display the compiled PDF in your IDE
+- [Typst](https://typst.app/) - These templates were built and tested with Typst 0.12. If compiling via the CLI (`typst compile`), ensure your Typst version is at least 0.11.0
 
 ## Installation Instructions
 
@@ -113,4 +114,4 @@ If you encounter any issues or have suggestions for improvements, please report 
 - [Typst Docs](https://typst.app/docs/)
 - [Zotero](https://www.zotero.org)
 - [Codelst Library](https://typst.app/universe/package/codelst/)
-- [Fletcher Library](https://typst.app/univer
+- [Fletcher Library](https://typst.app/universe/package/fletcher/)
