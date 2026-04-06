@@ -41,7 +41,7 @@ The BSc and MSc templates can be considered feature-complete and are unlikely to
 
 Previewing a document allows you to view a version of the document that updates with live edits you make to the Typst Code.
 
-1. You will need to make sure you are in the main Typst file that contains all the different report sections. For the BSc and MSc templates this is `Typst-Dissertation-Template.typ`, and for the PhD template this is `Typst-PhD-Thesis.typ`.
+1. You will need to make sure you are in the main Typst file that contains all the different report sections. For the BSc template this is `Typst-BSc-Dissertation-Template.typ`, for the MSc template this is `Typst-MSc-Dissertation-Template.typ`, and for the PhD template this is `Typst-PhD-Thesis.typ`.
 2. Select the preview button at the top of your IDE to open a live preview of the document.
 3. If there is an error in the Typst code, the preview will not be displayed.
 
@@ -54,7 +54,7 @@ Previewing a document allows you to view a version of the document that updates 
 
 To generate a PDF file for submission or sharing with others:
 
-1. Similar to how you would preview a document, you need to go to the top of the main Typst file. For the BSc and MSc templates this is `Typst-Dissertation-Template.typ`, and for the PhD template this is `Typst-PhD-Thesis.typ`.
+1. Similar to how you would preview a document, you need to go to the top of the main Typst file. For the BSc template this is `Typst-BSc-Dissertation-Template.typ`, for the MSc template this is `Typst-MSc-Dissertation-Template.typ`, and for the PhD template this is `Typst-PhD-Thesis.typ`.
 2. Select the export PDF option or press the PDF icon at the top of your IDE to compile the document.
 3. Again, if there is an error in the Typst code, the PDF will not compile.
 4. The compiled PDF will be outputted with the same name as the main file in the same directory, and can be opened in your IDE or any PDF viewer.
@@ -113,6 +113,4 @@ If you encounter any issues or have suggestions for improvements, please report 
 - [Typst Docs](https://typst.app/docs/)
 - [Zotero](https://www.zotero.org)
 - [Codelst Library](https://typst.app/universe/package/codelst/)
-- [Fletcher Library](https://typst.app/universe/package/fletcher/)
-- [Create a GitHub Template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
-- [Git Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+- [Fletcher Library](https://typst.app/univer
