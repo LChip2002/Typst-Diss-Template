@@ -1,1 +1,0 @@
-PHD Doctorate Template
