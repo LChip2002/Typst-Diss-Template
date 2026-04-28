@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-GB">
   <info>
-    <title>University of Lincoln - Harvard</title>
+    <title>University of Lincoln (author-date/Harvard)</title>
     <id>http://www.zotero.org/styles/university-of-lincoln-harvard</id>
     <link href="http://www.zotero.org/styles/university-of-lincoln-harvard" rel="self"/>
     <link href="http://www.zotero.org/styles/harvard-newcastle-university" rel="template"/>
@@ -12,9 +12,8 @@
       <email>obrienpat86@gmail.com</email>
     </author>
     <category citation-format="author-date"/>
-    <category field="generic-base"/>
     <summary>The Harvard author-date style, 2nd edition, as outlined by the library of the University of Lincoln.</summary>
-    <updated>2019-12-16T16:40:01+00:00</updated>
+    <updated>2026-01-05T14:58:08+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -154,7 +153,7 @@
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year">
     <layout prefix="(" suffix=")" delimiter="; ">
       <group delimiter=", ">
-        <text macro="author-short"/>
+        <text macro="author-short" text-case="capitalize-first"/>
         <text macro="year-date"/>
         <group>
           <text variable="locator"/>
@@ -162,7 +161,7 @@
       </group>
     </layout>
   </citation>
-  <bibliography hanging-indent="false">
+  <bibliography hanging-indent="true">
     <sort>
       <key macro="author"/>
       <key variable="title"/>
