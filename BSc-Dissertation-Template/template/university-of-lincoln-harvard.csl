@@ -12,8 +12,9 @@
       <email>obrienpat86@gmail.com</email>
     </author>
     <category citation-format="author-date"/>
-    <summary>The Harvard author-date style, 2nd edition, as outlined by the library of the University of Lincoln.</summary>
-    <updated>2026-01-05T14:58:08+00:00</updated>
+    <category field="generic-base"/>
+    <summary>The Harvard author-date style, 3rd edition, as outlined by the library of the University of Lincoln.</summary>
+    <updated>2026-04-28T00:00:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -36,7 +37,6 @@
       <label form="short" prefix=" (" suffix=".)"/>
       <substitute>
         <names variable="editor"/>
-        <text variable="title"/>
         <text macro="anon"/>
       </substitute>
     </names>
@@ -47,14 +47,7 @@
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
-        <choose>
-          <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
-            <text variable="title" form="short" font-style="italic"/>
-          </if>
-          <else>
-            <text variable="title" form="short" quotes="false"/>
-          </else>
-        </choose>
+        <text macro="anon"/>
       </substitute>
     </names>
   </macro>
@@ -101,7 +94,7 @@
         </date>
       </if>
       <else>
-        <text term="no date" form="short"/>
+        <text value="undated"/>
       </else>
     </choose>
   </macro>
