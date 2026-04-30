@@ -4,9 +4,9 @@
 
 = Appendices
 
-This section is for any supplementary content that does not fit easily within the main thesis. Examples include questionnaires, extra data, supplementary materials, or detailed proofs.
+This section is for any supplementary content that does not fit easily within the main dissertation. Examples include software documentation, user guides, large figures, logs of supervisor meetings, etc. This will not be marked directly but may be used to contextualise the main body of work. You can reference an appendix like so @appendix:a
 
-== Appendix A: Code Snippets with Codelst
+== Appendix A \ Code Snippets with Codelst <appendix:a>
 
 Here you can see a short snippet of code that was used to implement a simple Python sorting algorithm. The Codelst package provides syntax highlighting for code blocks:
 
@@ -32,7 +32,7 @@ def bubble_sort(array):
 
 #pagebreak()
 
-== Appendix B: Flowcharts with Fletcher
+== Appendix B \ Flowcharts with Fletcher
 
 This uses the Fletcher package to create a flowchart. The package is available at: https://typst.app/universe/package/fletcher/
 

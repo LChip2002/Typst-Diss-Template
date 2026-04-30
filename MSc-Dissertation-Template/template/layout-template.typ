@@ -151,6 +151,23 @@
   show figure.where(kind: image): fig_replace
   show ref: fig_replace
 
+  // Fallback function for Appendixes
+  show ref: it => {
+
+    if it.element == none {
+      return it
+    }
+    let elem = it.element
+    if elem.func() != heading {
+      return it
+    }
+    if elem.numbering != none {
+      return it
+    }
+    let lines = elem.body.children
+    let short = lines.first()
+    link(it.target, short)
+}
 
   // LIST SETTINGS
 
