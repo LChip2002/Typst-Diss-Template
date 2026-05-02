@@ -46,18 +46,6 @@
     margin: (left: 44mm, right: 44mm, top: TOP_PAGE_MARGIN, bottom: 45mm),
   )
 
-  // Header with alternating page numbers (no header on page 1)
-  set page(header: context {
-    if here().page() == 1 { return [] }
-
-    let alignment = if calc.rem(here().page(), 2) == 1 { right } else { left }
-
-    align(alignment)[
-      #counter(page).display()
-    ]
-  })
-
-
   // HEADING SETTINGS
   // NOTE: heading numbering is set in the main template file, not here,
   // so that it can be disabled for appendices.
