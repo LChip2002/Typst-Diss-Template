@@ -1,4 +1,5 @@
 #import "../template/layout-template.typ" as layout
+#import "../template/layout-template.typ": cite-author, cite-full, cite-year
 #show: doc => layout.MainPageSettings(doc)
 
 = Experimental Chapter 3

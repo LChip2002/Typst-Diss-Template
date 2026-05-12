@@ -1,3 +1,4 @@
+#import "../template/layout-template.typ": cite-author, cite-full, cite-year
 #import "../template/layout-template.typ" as layout
 #show: doc => layout.MainPageSettings(doc)
 
@@ -89,3 +90,5 @@ Also, a table can be found in @tab:SampleTableCaption.
 The included Harvard citation style file means that referencing will follow a Harvard style. You can cite references inline using the `@citekey` syntax. For example, here is a citation @exampleArticle2024. You can also reference conference papers @exampleConference2023 and books @exampleBook2022.
 
 This template uses a BibTeX (`.bib`) file for referencing. It is recommended to use a reference manager such as Zotero to export your references as a `.bib` file. The included citation style file follows the Harvard referencing convention. Confirm the required referencing style with your supervisory team, as conventions may vary between disciplines.
+
+To cite an author with just their name use the cite-author function, for example, #cite-author(<exampleArticle2024>). To cite only the year of a publication use the cite-year function, for example, #cite-year(<exampleArticle2024>) and add brackets if desired. For in-sentence citations use the cite-full function, for example, #cite-full(<exampleArticle2024>).

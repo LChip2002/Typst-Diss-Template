@@ -1,27 +1,38 @@
-#let MainPageSettings(doc) = {
+// For citing something with both author and year, author only, and year only
+#let cite-full(it) = {
+  cite(it, form: "prose")
+}
+#let cite-author(it) = {
+  cite(it, form: "author")
+}
+#let cite-year(it, suffix: none) = {
+  cite(it, form: "year")
+  if suffix != none { suffix }
+}
 
+#let MainPageSettings(doc) = {
   // CONFIGURATION VARIABLES
 
   // Spacing
-  let PAR_INDENT = 0pt                  // First-line paragraph indent
-  let LINE = 0.52em                     // Line spacing
-  let PAR = 2 * LINE                    // Paragraph spacing (2x line spacing)
-  let H_ABOVE = PAR                     // Space above non-chapter headings
-  let H_BELOW = PAR                     // Space below non-chapter headings
-  let SPECIAL_BELOW = 1.5 * PAR         // Space below special headers
-  let TOC_BELOW = 5 * PAR              // Extra space below Table of Contents title
-  let TOP_PAGE_MARGIN = 40mm            // Top page margin
+  let PAR_INDENT = 0pt // First-line paragraph indent
+  let LINE = 0.52em // Line spacing
+  let PAR = 2 * LINE // Paragraph spacing (2x line spacing)
+  let H_ABOVE = PAR // Space above non-chapter headings
+  let H_BELOW = PAR // Space below non-chapter headings
+  let SPECIAL_BELOW = 1.5 * PAR // Space below special headers
+  let TOC_BELOW = 5 * PAR // Extra space below Table of Contents title
+  let TOP_PAGE_MARGIN = 40mm // Top page margin
 
   // Font sizes
-  let SPECIAL_HEADING_SIZE = 23pt       // Special headings (References, Abstract, etc.)
-  let CHAPTER_SIZE = 22pt               // Chapter heading size
-  let SECTION_SIZE = 17pt               // Section heading size
-  let SUBSECTION_SIZE = 14.5pt          // Subsection heading size
-  let SUBSUBSECTION_SIZE = 10pt         // Sub-subsection heading size
-  let BODY_SIZE = 12pt                  // Body text size
-  let INFO_SIZE = 10pt                  // Info text size
-  let CAPTION_SIZE = 9pt                // Figure/table caption size
-  let SUPER_SIZE = 8pt                  // Superscript size
+  let SPECIAL_HEADING_SIZE = 23pt // Special headings (References, Abstract, etc.)
+  let CHAPTER_SIZE = 22pt // Chapter heading size
+  let SECTION_SIZE = 17pt // Section heading size
+  let SUBSECTION_SIZE = 14.5pt // Subsection heading size
+  let SUBSUBSECTION_SIZE = 10pt // Sub-subsection heading size
+  let BODY_SIZE = 12pt // Body text size
+  let INFO_SIZE = 10pt // Info text size
+  let CAPTION_SIZE = 9pt // Figure/table caption size
+  let SUPER_SIZE = 8pt // Superscript size
 
 
   // BASE TEXT SETTINGS
@@ -91,21 +102,23 @@
         #text(SPECIAL_HEADING_SIZE, weight: "bold")[#it.body]
       ]
 
-    // Special headings (unnumbered, standard special spacing)
-    } else if (it.body == [References] or
-               it.body == [Acknowledgements] or
-               it.body == [List of Figures] or
-               it.body == [List of Tables] or
-               it.body == [List of Acronyms] or
-               it.body == [Abstract] or
-               it.body == [Declaration] or
-               it.body == [List of Publications] or
-               it.body == [Appendices]) {
+      // Special headings (unnumbered, standard special spacing)
+    } else if (
+      it.body == [References]
+        or it.body == [Acknowledgements]
+        or it.body == [List of Figures]
+        or it.body == [List of Tables]
+        or it.body == [List of Acronyms]
+        or it.body == [Abstract]
+        or it.body == [Declaration]
+        or it.body == [List of Publications]
+        or it.body == [Appendices]
+    ) {
       block(above: H_ABOVE, below: SPECIAL_BELOW)[
         #text(SPECIAL_HEADING_SIZE, weight: "bold")[#it.body]
       ]
 
-    // Numbered headings
+      // Numbered headings
     } else if it.level == 1 {
       // Chapter headings — "Chapter N" label above title (grid layout)
       set text(CHAPTER_SIZE, weight: "bold")
@@ -116,8 +129,7 @@
             align: bottom,
             columns: (6fr, 1fr),
             row-gutter: 1.5em,
-            [Chapter #counter(heading).display()],
-            [],
+            [Chapter #counter(heading).display()], [],
             [#it.body],
           )
         }
@@ -168,7 +180,6 @@
 
   // Fallback function for Appendixes
   show ref: it => {
-
     if it.element == none {
       return it
     }
@@ -182,7 +193,7 @@
     let lines = elem.body.children
     let short = lines.first()
     link(it.target, short)
-}
+  }
 
   // LIST SETTINGS
 
