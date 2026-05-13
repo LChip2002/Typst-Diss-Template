@@ -92,7 +92,7 @@ This block achieves the following things (in order):
 
 This is missing a couple of features that would make the experience ever so slightly better:
 
-- Smooth navigation in insert mode
+- Smooth navigation in insert/visual mode
 - Real-time error highlighting
 - Reference search by keywords
 
