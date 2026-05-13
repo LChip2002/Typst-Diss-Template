@@ -20,14 +20,16 @@ The BSc and MSc templates can be considered feature-complete and are unlikely to
 
 ## Requirements
 
-- Any IDE that supports the Tinymist extension. The following are known to be compatible:
+- Any IDE/Text editor that supports the Tinymist extension. The following are known to be compatible:
   - [Visual Studio Code](https://code.visualstudio.com/)
   - [Google Antigravity](https://antigravity.google/download)
+  - [Vim/Neovim](https://neovim.io/doc/install/)
 - [Tinymist](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist) - Most up-to-date version of the Tinymist extension for your IDE (v0.14.14 as of April 2026)
 - [vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) - Most up-to-date version of the extension to display the compiled PDF in your IDE
 - [Typst](https://typst.app/) - These templates were built and tested with Typst 0.12. If compiling via the CLI (`typst compile`), ensure your Typst version is at least 0.11.0
 
 ## Installation Instructions
+(If using Vim or Neovim please refer to the [dedicated guide](VIM-Install.md)).
 
 1. Ensure the required software and extensions listed in the [Requirements](#requirements) section above are installed.
 2. Navigate to the repository on GitHub and click **Use this template**, then select **Create a new repository** to create your own copy.
