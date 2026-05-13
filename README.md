@@ -29,7 +29,7 @@ The BSc and MSc templates can be considered feature-complete and are unlikely to
 - [Typst](https://typst.app/) - These templates were built and tested with Typst 0.12. If compiling via the CLI (`typst compile`), ensure your Typst version is at least 0.11.0
 
 ## Installation Instructions
-(If using Vim or Neovim please refer to the [dedicated guide](VIM-Install.md).
+(If using Vim or Neovim please refer to the [dedicated guide](VIM-Install.md)).
 
 1. Ensure the required software and extensions listed in the [Requirements](#requirements) section above are installed.
 2. Navigate to the repository on GitHub and click **Use this template**, then select **Create a new repository** to create your own copy.
