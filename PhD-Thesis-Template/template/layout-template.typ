@@ -76,7 +76,13 @@
     return block(width: 100%)[
       #set text(size: 9pt)
       #align(right)[
-        #emph(chapter-title) #h(0.25cm) #strong(page-num)
+        // Only show the chapter title in the footer if the current page
+        // is not the first page of the chapter.
+        #let i = here().page()
+        #if not query(heading.where(level: 1)).any(it => it.location().page() == i) {
+          emph[#chapter-title]
+        }
+        #h(0.25cm) #strong(page-num)
       ]
     ]
   })
