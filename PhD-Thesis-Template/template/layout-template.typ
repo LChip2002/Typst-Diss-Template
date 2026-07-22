@@ -205,6 +205,9 @@
 
   set list(indent: 15pt, spacing: 0.5em)
 
+  // Equation numbering and spacing.
+  set math.equation(numbering: "(1)", supplement: [Eq.])
+  show math.equation: set block(spacing: 0.65em)
 
   // RENDER DOCUMENT
 
