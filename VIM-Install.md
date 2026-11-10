@@ -37,8 +37,10 @@ vim.pack.add({ { src = "https://github.com/neovim/nvim-lspconfig" } })
 vim.lsp.enable({ "tinymist", })  -- Can add lua_ls, pylsp, etc.
 vim.diagnostic.config({ virtual_text = true })
 ```
-[!NOTE]
-The filename here should be the same as above in `vim.lsp.enable`.
+
+> [!NOTE]
+> The filename here should be the same as above in `vim.lsp.enable`.
+
 ./lsp/tinymist.lua
 ```lua
 local lsp_functions = require('lsp_functions')
@@ -72,8 +74,10 @@ return {
     settings = {}
 }
 ```
-[!NOTE]
-Instead of requiring tinymist here you can instead use `:Mason` to install it interactively.
+
+> [!NOTE]
+> Instead of requiring tinymist here (using `ensure_installed`) you can instead use `:Mason` to install it interactively within Neovim.
+
 ./plugin/mason.lua
 ```lua
 vim.pack.add({ { src = 'https://github.com/mason-org/mason.nvim' } })
