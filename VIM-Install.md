@@ -51,7 +51,7 @@ vim.diagnostic.config({ virtual_text = true })
 ```
 
 > [!NOTE]
-> The filename here should be the same as above in `vim.lsp.enable`.
+> The filename below should be the same as above in `vim.lsp.enable`.
 
 ./lsp/tinymist.lua
 ```lua
@@ -88,7 +88,7 @@ return {
 ```
 
 > [!NOTE]
-> Instead of requiring tinymist here (using `ensure_installed`) you can instead use `:Mason` to install it interactively within Neovim.
+> Instead of requiring tinymist below (using `ensure_installed`) you can instead use `:Mason` to install it interactively within neovim.
 
 ./plugin/mason.lua
 ```lua
