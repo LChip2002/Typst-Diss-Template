@@ -27,10 +27,22 @@ After this is done run `PlugInstall`.
 You can install **tinymist** separately or you can use Mason to manage it.
 There are multiple ways to organise your configuration (e.g. below) but here are the main blocks you need:
 
+```bash
+.
+├── init.lua
+├── lsp
+│   └── tinymist.lua
+├── lua
+│   └── lsp.lua
+└── plugin
+    └── mason.lua
+```
+
 ./init.lua
 ```lua
 require('lsp')
 ```
+
 ./lua/lsp.lua
 ```lua
 vim.pack.add({ { src = "https://github.com/neovim/nvim-lspconfig" } })
