@@ -1,8 +1,10 @@
 # VIM/Neovim Install Guide
 
-Using this template with Vim/Neovim can be difficult but is rewarding when you have it working. This is how I set up my environment using vim plug (adapt for your preferred plugin manager).
+Using this template with Vim/Neovim can be difficult but is rewarding when you have it working.
 
 ## Installs
+
+### Vim Plug
 
 You will need **tinymist** and **typst** installed. To install typst refer to **README.md**. Tinymist will be used as an LSP server for preview and diagnostics. To install tinymist on linux use:
 
@@ -19,6 +21,91 @@ When these are installed I recommend the 'typst preview' plugin. This can be fou
 `Plug 'chomosuke/typst-preview.nvim', {'tag': 'v1.*'}`
 
 After this is done run `PlugInstall`.
+
+### vim.pack (native to 0.12+)
+
+You can install **tinymist** separately or you can use Mason to manage it.
+There are multiple ways to organise your configuration (e.g. below) but here are the main blocks you need:
+
+```bash
+.
+├── init.lua
+├── lsp
+│   └── tinymist.lua
+├── lua
+│   └── lsp.lua
+└── plugin
+    └── mason.lua
+```
+
+./init.lua
+```lua
+require('lsp')
+```
+
+./lua/lsp.lua
+```lua
+vim.pack.add({ { src = "https://github.com/neovim/nvim-lspconfig" } })
+vim.lsp.enable({ "tinymist", })  -- Can add lua_ls, pylsp, etc.
+vim.diagnostic.config({ virtual_text = true })
+```
+
+> [!NOTE]
+> The filename below should be the same as above in `vim.lsp.enable`.
+
+./lsp/tinymist.lua
+```lua
+local lsp_functions = require('lsp_functions')
+return {
+    on_attach = function(client, bufnr)
+        lsp_functions.on_attach(client, bufnr)
+        local function pin_main(value, title)
+            client:exec_cmd({
+                title = title,
+                command = 'tinymist.pinMain',
+                arguments = { value },
+            }, { bufnr = bufnr })
+        end
+
+        vim.keymap.set('n', '<leader>tp', function()
+            pin_main(vim.api.nvim_buf_get_name(bufnr), 'pin')
+        end, { buffer = bufnr, desc = '[T]inymist [P]in' })
+
+        vim.keymap.set('n', '<leader>tu', function()
+            pin_main(vim.v.null, 'unpin')
+        end, { buffer = bufnr, desc = '[T]inymist [U]npin' })
+
+        vim.keymap.set('n', '<leader>tt', function()
+            pin_main(vim.api.nvim_buf_get_name(bufnr), 'pinpreview')
+            vim.cmd('TypstPreview')
+        end, { buffer = bufnr, desc = 'Tinymist Pin and Preview' })
+    end,
+
+    cmd = { "tinymist" },
+    filetypes = { "typst" },
+    settings = {}
+}
+```
+
+> [!NOTE]
+> Instead of requiring tinymist below (using `ensure_installed`) you can instead use `:Mason` to install it interactively within neovim.
+
+./plugin/mason.lua
+```lua
+vim.pack.add({ { src = 'https://github.com/mason-org/mason.nvim' } })
+require("mason").setup()
+require("mason-lspconfig").setup({
+    ensure_installed = { "lua_ls", "tinymist" },
+})
+
+```
+
+Included are three keymaps (the first two recommend by typst-preview) to pin the main file.
+This prevents the issue of references not being found in child files.
+Navigate to the main file and either `<leader>tp` then `:TypstPreview` or just simply `<leader>tt>` to pin and start the preview.
+
+The preview can be configured to a browser or a PDF viewer (e.g. Zathura) but there are compilation delays using a PDF viewer.
+
 
 ## Using Typst in Vim/Neovim
 
