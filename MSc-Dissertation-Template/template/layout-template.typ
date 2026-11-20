@@ -3,7 +3,7 @@
   // CONFIGURATION VARIABLES
 
   // Spacing
-  let PAR_INDENT = 0pt                  // First-line paragraph indent
+  let PAR_INDENT = 2em                  // First-line paragraph indent
   let LINE = 0.52em                     // Line spacing
   let PAR = 2 * LINE                    // Paragraph spacing (2x line spacing)
   let H_ABOVE = PAR                     // Space above non-chapter headings
